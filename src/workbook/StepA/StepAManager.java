@@ -22,6 +22,31 @@ public class StepAManager {
 			case 1: 				
 				YearToAge yta = new YearToAge();
 				yta.printAge();
+				break;
+			case 2:
+				CelsiusToFahrenheit ctf = new CelsiusToFahrenheit();
+				ctf.printTemprature();
+				break;
+			case 3:
+				SquareToArea sta = new SquareToArea();
+				sta.printArea();
+				break;
+			case 4:
+				AreaToPyeong atp = new AreaToPyeong();
+				atp.printPyeong();
+				break;
+			case 5:
+				DayToSeconds dts = new DayToSeconds();
+				dts.printSeconds();
+				break;
+			case 6:
+				ScoreToMean stm = new ScoreToMean();
+				stm.printAvareage();
+				break;
+			case 7:
+				GigabyteToBytes gtb = new GigabyteToBytes();
+				gtb.printBytes();
+				break;
 			}
 		}
 		
