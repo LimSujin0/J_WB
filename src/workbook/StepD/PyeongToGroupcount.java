@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PyeongToGroupcount {
 	//initialize
 	private double m2_area, pyeong_area;
-	private int count1, count2, count3, count4;
+	private int count1=0, count2=0, count3=0, count4=0;
 	private int i;
 	
 	//constructor

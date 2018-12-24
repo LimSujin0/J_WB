@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class YearToMinorcount {
 	//initialize
-	private int count_all, count_young;
+	private int count_all=0, count_young=0;
 	private int birth_year, age;
 	private int i;
 	//constructor

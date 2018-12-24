@@ -6,7 +6,7 @@ public class InputToTotalAverage {
 	//initialize
 	private int number;
 	private int count = 0;
-	private int totalsum;
+	private int totalsum=0;
 	private double average;
 	//constructor
 	public InputToTotalAverage() {

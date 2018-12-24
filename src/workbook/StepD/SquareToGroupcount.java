@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SquareToGroupcount {
 	//initialize
 	private int width, height;
-	private int count1, count2, count3, count4, count5;
+	private int count1=0, count2=0, count3=0, count4=0, count5=0;
 	//constructor
 	public SquareToGroupcount() {
 		input();
