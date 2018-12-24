@@ -45,12 +45,11 @@ public class TwonumToExclusivemul {
 //		}
 //		System.out.println("");
 		
-		//3¾È
+		//3¾È(±ò²û¾²)
 		for(i=1; i<=100; i++) {
 			if(i%num1==0&&i%num2!=0) System.out.printf("%d ", i);
 			if(i%num2==0&&i%num1!=0) System.out.printf("%d ", i);
 		}
 		System.out.println("");
-	
 	}
 }
