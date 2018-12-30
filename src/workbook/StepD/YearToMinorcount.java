@@ -1,3 +1,4 @@
+
 package workbook.StepD;
 
 import java.util.Scanner;
@@ -6,7 +7,6 @@ public class YearToMinorcount {
 	//initialize
 	private int count_all=0, count_young=0;
 	private int birth_year, age;
-	private int i;
 	//constructor
 	public YearToMinorcount() {input();}
 	private void input() {
@@ -20,8 +20,8 @@ public class YearToMinorcount {
 	}
 	private void getYear() {
 		Scanner s = new Scanner(System.in);
-		for(i=0; i<count_all; i++) {
-			System.out.print("태어난 녕도를 입력하세요. ");
+		for(int i=0; i<count_all; i++) {
+			System.out.print("태어난 년도를 입력하세요. ");
 			birth_year = s.nextInt();
 			countYoung();
 		}

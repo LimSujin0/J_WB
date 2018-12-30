@@ -7,8 +7,6 @@ public class SecondLargestNum {
 	private int num[] = new int[10];
 	private int first, second;
 	private int second_max_index;
-	private int newnum;
-	private int i;
 	//constructor
 	public SecondLargestNum() {
 		input();
@@ -20,13 +18,13 @@ public class SecondLargestNum {
 	
 	private void getInpuToSecondLargest() {
 		Scanner s = new Scanner(System.in);
-		for(i=0;i<10;i++) {
+		for(int i=0;i<10;i++) {
 			System.out.printf("%d번째 수를 입력하시오. ", i+1);
-			newnum = s.nextInt();
+			int newnum = s.nextInt();
 			num[i] = newnum;
 			if(i==0) {
-				first=newnum; 
-				second=newnum;
+				int first=newnum; 
+				int second=newnum;
 			}
 			getSecondLargest(i);
 		}		

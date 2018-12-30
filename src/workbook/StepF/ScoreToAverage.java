@@ -5,18 +5,16 @@ import java.util.Scanner;
 public class ScoreToAverage {
 	private double score[] = new double[10];
 	private double maxscore, minscore;
-	private double total=0, average=0;
-	private double newnum;
-	private int i;
+	private double average, total=0;
 	//constructor
 	public ScoreToAverage() {
 		input();
 	}
 	private void input() {
 		Scanner s = new Scanner(System.in);
-		for(i=0;i<10;i++) {
+		for(int i=0;i<10;i++) {
 			System.out.printf("%d번 심사점수를 입력하시오.",i+1);
-			newnum = s.nextDouble();
+			double newnum = s.nextDouble();
 			score[i] = newnum;
 			total = total + newnum;
 			if(i==0) {

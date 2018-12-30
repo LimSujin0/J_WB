@@ -6,7 +6,6 @@ public class GetAnnualDays {
 	private int monthdays[] = {31,28,31,30,31,30,31,31,30,31,30,31};
 	private int month, day;
 	private int day_count=0;
-	private int i;
 	//constructor
 	public GetAnnualDays() {
 		input();
@@ -38,7 +37,7 @@ public class GetAnnualDays {
 		return true;
 	}
 	private void getDayCount() {
-		for(i=month; i>0; i--) {
+		for(int i=month; i>0; i--) {
 			if(i==month)	day_count = day_count + day;
 			else	day_count  = day_count + monthdays[i-1];
 		}

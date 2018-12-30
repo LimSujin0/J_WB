@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class GetUniqueInput {
 	private int number[] = new int[10];
-	private int newnum;
 	private int count;
-	//private boolean dup;
-	private int i;
 	//constructor
 	public GetUniqueInput() {
 		input();
@@ -15,7 +12,7 @@ public class GetUniqueInput {
 	private void input() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("1부터 100까지의 숫자를 입력하시오.");
-		for(i=0;i<10;i++) {
+		for(int i=0;i<10;i++) {
 			System.out.printf("%d번째 숫자를 입력하시오.", i+1);
 			number[i] = s.nextInt();
 			while(true) {
@@ -35,7 +32,7 @@ public class GetUniqueInput {
 	}
 	//print number array
 	public void printNumberArray() {
-		for(i=0;i<10;i++)
+		for(int i=0;i<10;i++)
 			System.out.printf("%d번째 숫자는 %d입니다.\n", i+1, number[i]);
 	}
 }
