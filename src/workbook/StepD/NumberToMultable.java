@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class NumberToMultable {
 	//initialize
 	private int dan;
-	private int i;
 	
 	//constructor
 	public NumberToMultable() {
@@ -27,7 +26,7 @@ public class NumberToMultable {
 	
 	//print multiplication table
 	public void printMultable() {
-		for(i=1; i<10; i++) {
+		for(int i=1; i<10; i++) {
 			System.out.printf("%d X %d = %d\n", dan, i, dan*i);
 		}
 	}

@@ -6,7 +6,6 @@ public class AddFromOne {
 	//initialize
 	private int number;
 	private int totalsum = 0;
-	private int i;
 	
 	//constructor
 	public AddFromOne() { input(); }
@@ -26,7 +25,7 @@ public class AddFromOne {
 	}
 	
 	private int getTotal() {
-		for(i=1; i<=number; i++) {
+		for(int i=1; i<=number; i++) {
 			totalsum = totalsum + i;
 		}
 		return totalsum;

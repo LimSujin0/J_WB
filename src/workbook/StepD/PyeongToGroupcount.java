@@ -6,7 +6,6 @@ public class PyeongToGroupcount {
 	//initialize
 	private double m2_area, pyeong_area;
 	private int count1=0, count2=0, count3=0, count4=0;
-	private int i;
 	
 	//constructor
 	public PyeongToGroupcount() {
@@ -19,7 +18,7 @@ public class PyeongToGroupcount {
 
 	private void getPyeong() {
 		Scanner s = new Scanner(System.in);
-		for(i=0;i<10;i++) {
+		for(int i=0;i<10;i++) {
 			System.out.print("아파트의 분양 면적(제곱미터)을 입력하시오. ");
 			m2_area= s.nextDouble();
 			pyeong_area = m2_area/3.305;

@@ -6,7 +6,6 @@ public class SimpleEquationToCoordinate {
 	//initialize
 	private int a, b;
 	private int x_begin, x_end;
-	private int x, y;
 	//constructor
 	public SimpleEquationToCoordinate() {
 		input();
@@ -26,8 +25,8 @@ public class SimpleEquationToCoordinate {
 	
 	//print coordinate
 	public void printSimpleCoordinate() {
-		for(x=x_begin; x<=x_end; x++) {
-			y = x * a + b;
+		for(int x=x_begin; x<=x_end; x++) {
+			int y = x * a + b;
 			System.out.printf("ÁÂÇ¥ (%d, %d)\n", x, y);
 		}
 	}
