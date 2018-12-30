@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class OddEvenAndColumn {
 	//initialize
 	private int mode, column;
-	private int i, j;
 	//constructor
 	public OddEvenAndColumn() {
 		input();
@@ -19,23 +18,14 @@ public class OddEvenAndColumn {
 	}
 	//print multiplication
 	public void printColumnMultiplication() {
-		if(mode==1) printOddColumnMultiplication();
-		else if(mode==2) printEvenColumnMultiplication();
-		else System.out.print("잘못 입력하셨습니다.\n");
+		if(mode!=1 || mode!=2)System.out.print("잘못 입력하셨습니다.\n");
+		else printOddAndEvenColumnMultiplication();
 	}
-	private void printEvenColumnMultiplication() {
-		for(i=2;i<10;i=i+2) {
-			for(j=1;j<10;j++) {
-				System.out.printf("%d x %d = %d\t", i, j, i*j);
-				if(j%column==0) System.out.println("");
-			}
-			System.out.println("");
-		}
-		
-	}
-	private void printOddColumnMultiplication() {
-		for(i=3;i<10;i=i+2) {
-			for(j=1;j<10;j++) {
+	private void printOddAndEvenColumnMultiplication() {
+		if(mode==1) mode++;
+		else if(mode==2) mode++;
+		for(int i=mode+1;i<10;i=i+2) {
+			for(int j=1;j<10;j++) {
 				System.out.printf("%d x %d = %d\t", i, j, i*j);
 				if(j%column==0) System.out.println("");
 			}

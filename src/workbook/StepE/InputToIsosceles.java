@@ -19,9 +19,7 @@ public class InputToIsosceles {
 	public void printIsosceles() {
 		for(i=1;i<=height;i++) {
 			for(j=0;j<height-i;j++)	System.out.print(" ");
-			for(j=0;j<i;j++)	System.out.print("*");
-			for(j=0;j<i-1;j++)	System.out.print("*");
-			for(j=0;j<height-i;j++)	System.out.print(" ");
+			for(j=0;j<2*i-1;j++)	System.out.print("*");
 			System.out.println("");
 		}
 	}
