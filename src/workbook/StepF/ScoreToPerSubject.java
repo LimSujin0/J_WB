@@ -14,12 +14,7 @@ public class ScoreToPerSubject {
 		Scanner s = new Scanner(System.in);
 		for(int i=0;i<5;i++) {
 			System.out.printf("%d번 학생 국어, 영어, 수학, 점수를 입력하시오.", i+1);
-			int kor = s.nextInt();
-			int eng = s.nextInt();
-			int mat = s.nextInt();
-			jumsu[i][0] = kor;
-			jumsu[i][1] = eng;
-			jumsu[i][2] = mat;
+			for(int j=0; j<3; j++) jumsu[i][j] = s.nextInt();
 		}
 	}
 	//print total and average per subject

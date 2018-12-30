@@ -8,7 +8,7 @@ public class StepFManager {
 	public StepFManager() {
 		while(true) {
 			printf("-------------------------\n");
-			printf("1.두 번째로 큰 수의 순서 찾기\n");ㅁ
+			printf("1.두 번째로 큰 수의 순서 찾기\n");
 			printf("2.심사점수 계산\n");
 			printf("3.5명의 국, 영, 수 3과목 점수의 과목별 총점, 평균값 구하기.\n");
 			printf("4.5명의 국, 영, 수 3과목 점수의 학생별 총점, 평균값 구하기.\n");

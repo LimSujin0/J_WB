@@ -38,7 +38,7 @@ public class SecondLargestNum {
 	}
 	
 	private void getSecondMaxIndex() {
-		for(i=0;i<10;i++) {
+		for(int i=0;i<10;i++) {
 			if(second==num[i]) {
 				second_max_index = i;
 				break;

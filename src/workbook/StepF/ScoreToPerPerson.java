@@ -12,17 +12,18 @@ public class ScoreToPerPerson {
 		input();
 	}
 	private void input() {
+		int total;
 		Scanner s = new Scanner(System.in);
 		for(int i=0;i<5;i++) {
+			total = 0;
 			System.out.printf("%d번 학생 국어, 영어, 수학 점수를 입력하시오.", i+1);
-			int kor = s.nextInt();
-			int eng = s.nextInt();
-			int mat = s.nextInt();
-			jumsu[i][0]=kor;
-			jumsu[i][1]=eng;
-			jumsu[i][2]=mat;
-			sum[i] = kor + eng + mat;
-			average[i] = (double)sum[i]/3.0f;
+			for(int j = 0; j<4 ; j++) {	
+				int newnum = s.nextInt();
+				total = total +newnum;
+				jumsu[i][j] = newnum;
+			}
+			sum[i] = total;
+			average[i] = (double)total/3.0f;
 		}
 	}
 
