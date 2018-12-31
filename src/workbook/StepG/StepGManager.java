@@ -2,8 +2,6 @@ package workbook.StepG;
 
 import java.util.Scanner;
 
-import workbook.StepF.¤±;
-
 public class StepGManager {
 	int menu = 0;
 	Scanner s = new Scanner(System.in);
@@ -23,7 +21,32 @@ public class StepGManager {
 			switch(menu){
 			case 1:
 				AgeToAgegroupDecision atad = new AgeToAgegroupDecision();
-				
+				atad.printAgeGroup();
+				break;
+			case 2:
+				TempToSection tts = new TempToSection();
+				tts.printTempSection();
+				break;
+			case 3:
+				ScoreToPer stp = new ScoreToPer();
+				stp.printScorePerSubStd();
+				break;
+			case 4:
+				RealestateComission rc = new RealestateComission();
+				rc.printTotalCharge();
+				break;
+			case 5:
+				InternetCafeCharge icf = new InternetCafeCharge();
+				icf.printTotalCharge();
+				break;
+			case 6:
+				MallAccountSale mas = new MallAccountSale();
+				mas.printTotalSale();
+				break;
+			case 7:
+				AmusementTicketOffice ato = new AmusementTicketOffice();
+				ato.printVisitorFee();
+				break;
 			}
 		}
 	}
