@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class OddorEvenMultiplication {
 	//initialize
 	private int mode;
-	private int i, j;
 	//constructor
 	public OddorEvenMultiplication() {
 		input();
@@ -17,28 +16,18 @@ public class OddorEvenMultiplication {
 	}
 	//print multiplication
 	public void printMultiplication() {
-		if(mode==1) {
-			printOddMultiplication();
-		}else if(mode==2) {
-			printEvenMultiplication();
+		if(mode==1 || mode==2) {
+			printEvenOddMultiplication();
 		}else {
 			System.out.print("잘못 입력하셨습니다.\n");
 		}
 	}
-	private void printEvenMultiplication() {
-		for(i=2;i<10;i=i+2) {
-			for(j=1;j<10;j++) {
+	private void printEvenOddMultiplication() {
+		if(mode==1) mode = mode+2;
+		for(int i=2;i<10;i=i+2) {
+			for(int j=1;j<10;j++) {
 				System.out.printf("%d x %d = %d\t", i, j, i*j);
 				if(j%3==0) System.out.print("\n");
-			}
-			System.out.println("");
-		}
-	}
-	private void printOddMultiplication() {
-		for(i=3;i<10;i=i+2) {
-			for(j=1;j<10;j++) {
-				System.out.printf("%d x %d = %d\t", i, j, i*j);
-				if(j%3==0) System.out.println("");
 			}
 			System.out.println("");
 		}
