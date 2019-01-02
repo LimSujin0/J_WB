@@ -18,13 +18,15 @@ public class OddEvenAndColumn {
 	}
 	//print multiplication
 	public void printColumnMultiplication() {
-		if(mode!=1 || mode!=2)System.out.print("잘못 입력하셨습니다.\n");
+		if(mode!=1 && mode!=2) {
+			System.out.print("잘못 입력하셨습니다.\n");
+			input();
+		}
 		else printOddAndEvenColumnMultiplication();
 	}
 	private void printOddAndEvenColumnMultiplication() {
-		if(mode==1) mode++;
-		else if(mode==2) mode++;
-		for(int i=mode+1;i<10;i=i+2) {
+		if(mode==1) mode = mode+2;
+		for(int i=mode;i<10;i=i+2) {
 			for(int j=1;j<10;j++) {
 				System.out.printf("%d x %d = %d\t", i, j, i*j);
 				if(j%column==0) System.out.println("");
