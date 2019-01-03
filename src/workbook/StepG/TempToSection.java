@@ -22,7 +22,8 @@ public class TempToSection {
 	public void printTempSection() {
 		for(int i=0; i<10; i++) {
 			double degree = degrees[i];
-			System.out.printf("%d번의 물의 온도를 %.1f도입니다. %s\n", i+1, degree, checkSection(degree));			
+			count[checkSection(degree)]++;
+			System.out.printf("%d번의 물의 온도는 %.1f도입니다. %s\n", i+1, degree, degree_name[checkSection(degree)]);			
 		}
 		for(int i=0; i<4; i++) {
 			System.out.printf("%s 입력 횟수 : %d\n", degree_name[i], count[i]);
@@ -30,21 +31,12 @@ public class TempToSection {
 
 	}
 
-	private String checkSection(double degree) {
-		if(degree<0)	return "잘못입력";
-		else if(degree<25) {
-			count[0]++;
-			return degree_name[0];
-		}else if(degree<40) {
-			count[1]++;
-			return degree_name[1];
-		}else if(degree<80) {
-			count[2]++;
-			return degree_name[2];
-		}else {
-			count[3]++;
-			return degree_name[3];
-		}
+	private int checkSection(double degree) {
+		if(degree<0)	return -1;
+		else if(degree<25) return 0;
+		else if(degree<40) return 1;
+		else if(degree<80) return 2;
+		else return 3;
 	}
 	
 }
