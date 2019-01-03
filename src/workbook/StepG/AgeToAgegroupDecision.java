@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class AgeToAgegroupDecision {
 	private int age[] = new int [100];
 	private int count_person=-1;
-	private int count_baby=0, count_child=0, count_youth=0, count_young=0; 
-	private int count_adult=0, count_old=0;
+	private int count_group[] = new int[6]; 
+	private String group_name[] = {"유아", "어린이", "청소년", "청년", "중년", "노년"};
 	public AgeToAgegroupDecision() {
 		input();
 	}
@@ -29,12 +29,14 @@ public class AgeToAgegroupDecision {
 	}
 	
 	private void checkAgeGroup(int ages) {
-		if(ages<7) count_baby++;
-		else if(ages<13) count_child++;
-		else if(ages<20) count_youth++;
-		else if(ages<30) count_young++;
-		else if(ages<60) count_adult++;
-		else count_old++;
+		int group_num ;
+		if(ages<7) group_num = 0;
+		else if(ages<13) group_num=1;
+		else if(ages<20) group_num=2;
+		else if(ages<30) group_num=3;
+		else if(ages<60) group_num=4;
+		else group_num=5;
+		count_group[group_num]++;
 	}
 	
 	private int checkAge(int b_year) {
@@ -45,14 +47,9 @@ public class AgeToAgegroupDecision {
 	}
 	
 	public void printAgeGroup() {
-		for(int i =0 ; i<=count_person ; i++ ) {
+		for(int i =0 ; i<=count_person ; i++ )
 			System.out.printf("%d번째 태어난 사람의 나이는 %d입니다.\n", i+1, age[i]);
-		}
-		System.out.printf("유아는 %d명입니다.\n", count_baby);
-		System.out.printf("어린이는 %d명입니다.\n", count_child);
-		System.out.printf("청소년은 %d명입니다.\n", count_youth);
-		System.out.printf("청년은 %d명입니다.\n", count_young);
-		System.out.printf("중년은 %d명입니다.\n", count_adult);		
-		System.out.printf("노년은 %d명입니다.\n", count_old);
+		for(int i=0;i<count_group.length;i++)
+			System.out.printf("%s는 %d명입니다.\n", group_name[i], count_group[i]);
 	}
 }

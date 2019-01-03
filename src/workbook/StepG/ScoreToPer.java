@@ -13,10 +13,10 @@ public class ScoreToPer {
 
 	private void input() {
 		Scanner s = new Scanner(System.in);
-		for(int i=0; i<5; i++) {
+		for(int i=0; i<jumsu.length; i++) {
 			int total = 0;
 			System.out.printf("%d번 학생의 국어, 영어, 수학 점수는?", i+1);
-			for(int j =0; j<3; j++) {
+			for(int j =0; j<c_total.length; j++) {
 				jumsu[i][j] = s.nextInt();
 			}
 		}
