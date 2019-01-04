@@ -22,9 +22,8 @@ public class ParkingSpot {
 		car_num = s.nextInt();
 		car_sort = s.next();
 		input_time = f.format(new Date());
-		System.out.print(input_time);
 	}
 	void print() {
-		System.out.printf("[%d¹ø] %d  %s  %s\n", spot_num, car_num, car_sort, input_time);
+		System.out.printf("[%d¹ø]  %d  %s  %s\n", spot_num, car_num, car_sort, input_time);
 	}
 }
