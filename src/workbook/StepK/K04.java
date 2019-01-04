@@ -16,7 +16,7 @@ public class K04 {
 			ps[i].input();
 		}
 
-		ps[0].printFirst();
+		System.out.println("===========================");
 		for(int i=0;i<total;i++) {
 			ps[i].count=i+1;
 			ps[i].printQuadrant();

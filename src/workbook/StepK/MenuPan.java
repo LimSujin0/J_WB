@@ -15,10 +15,6 @@ public class MenuPan {
 		origin = s.next();
 		price = s.nextInt();
 	}
-	void print_first() {
-		System.out.print("==============================\n");
-		System.out.printf("메뉴번호\t메뉴이름\t원산지\t1인분가격\n");
-	}
 	void print_menu() {
 		System.out.printf("%d\t%s\t%s\t%d\n", number, name, origin, price);	
 	}

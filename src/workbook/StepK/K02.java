@@ -15,7 +15,8 @@ public class K02 {
 			mp[i].input();
 		}
 		 
-		mp[0].print_first();
+		System.out.print("==============================\n");
+		System.out.printf("메뉴번호\t메뉴이름\t원산지\t1인분가격\n");
 		for(int i=0;i<total;i++) mp[i].print_menu();
 	}
 	

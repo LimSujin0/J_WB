@@ -8,7 +8,7 @@ public class K03 {
 		p0.input();
 		p0.count=1;
 		
-		p0.printFirst();
+		System.out.println("===========================");
 		p0.printQuadrant();
 		quadrant_count[p0.quadrant]++;
 		
