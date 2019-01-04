@@ -54,6 +54,7 @@ public class StepJManager {
 					break;
 				case 10:
 					FibonacciToGoldenratio ftg = new FibonacciToGoldenratio();
+					break;
 			}
 		}
 	}
