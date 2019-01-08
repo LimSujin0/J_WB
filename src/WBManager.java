@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 import workbook.StepA.StepAManager;
@@ -12,9 +14,10 @@ import workbook.StepI.StepIManager;
 import workbook.StepJ.StepJManager;
 import workbook.StepK.StepKManager;
 import workbook.StepL.StepLManager;
+import workbook.StepM.StepMManager;
 public class WBManager {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
 		System.out.print("원하는 Step은?");
@@ -43,6 +46,8 @@ public class WBManager {
 			new StepKManager();
 		if(step.equalsIgnoreCase("L"))
 			new StepLManager();
+		if(step.equalsIgnoreCase("M"))
+			new StepMManager();
 		System.out.printf("종료되었습니다.\n");
 	}	
 }

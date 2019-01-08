@@ -27,7 +27,7 @@ public class StepLManager {
 					break;
 				case 4:
 					StudentInformAdmin sif = new StudentInformAdmin();
-					
+					break;
 			}
 		}
 	}

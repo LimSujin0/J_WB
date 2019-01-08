@@ -99,9 +99,7 @@ public class ParkingLot {
 	}
 	
 	private void printList() {
-		for(int i=0;i<pss.size();i++) {
-			ParkingSpot p = pss.get(i);
-			p.print();
-		}
+		for(int i=0;i<pss.size();i++)
+			pss.get(i).print();
 	}
 }
